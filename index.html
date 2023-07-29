@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Test</title>
+  <title>Torec</title>
   <style>
     body {
       color: #ffffff;
@@ -111,10 +111,10 @@
       border-radius: 4px;
     }
     .control-button:hover {
-      background: #a4000026;
+      background: #ff4c4c26;
     }
     .control-button.active {
-      background: #a4000059;
+      background: #ff4c4c59;
     }
     .fullscreen-button {
       background: white !important;
@@ -160,8 +160,8 @@
 
   <div id="loading" class="screen">
     <noscript>Enable JavaScript</noscript>
-    <h1 class="loading-text">Constructing blocks ...</h1>
-    <div class="loading-image"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTUuMDE1MDIiIGhlaWdodD0iMzg0LjM4NDM4IiB2aWV3Qm94PSIwLDAsNTE1LjAxNTAyLDM4NC4zODQzOCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIyMzcuMDUxMTQiIHkxPSIxOTAuNTExNzYiIHgyPSIyMzcuMDUxMTQiIHkyPSIyNTIuNjcwODYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBpZD0iY29sb3ItMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDAwMDAwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTcuNTA3NTEsMTIuMTkyMTkpIj48ZyBkYXRhLXBhcGVyLWRhdGE9InsmcXVvdDtpc1BhaW50aW5nTGF5ZXImcXVvdDs6dHJ1ZX0iIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0tMTcuNTA3NTEsMzcyLjE5MjE5di0zODQuMzg0MzhoNTE1LjAxNTAydjM4NC4zODQzOHoiIGZpbGw9IiMwMDAwMDAiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwIi8+PGltYWdlIHg9IjIzNS4zNzYzNSIgeT0iMjg0Ljk3OTUzIiB0cmFuc2Zvcm09InNjYWxlKDAuMzY1MDMsMC4zNjUwMykiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQUlBQUFBQ0NBWUFBQUJ5dGcwa0FBQUFFa2xFUVZRSVcyUDgvLysvTVFNUU1NSVlBRWl4Qm1PNzJzVlFBQUFBQUVsRlRrU3VRbUNDIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMC41Ii8+PHBhdGggZD0iTTE1Ny40MDU3OCw1OS4zMjgxMmMyNC41MTYwMSwtMTkuNTQzOTEgNjcuNzcyODcsLTE3LjQzODY2IDkwLjI3NTE3LDQuMzkzNTVsNzMuMzQ4NTcsMy41Njk3NmMyLjA3NzQsMC4xMDExIDMuNjc5NSwxLjg2NzEzIDMuNTc4NCwzLjk0NDUzbC0xLjgzMDY1LDM3LjYxNDY1Yy0wLjEwMTEsMi4wNzc0IC0xLjg2NzEzLDMuNjc5NSAtMy45NDQ1MywzLjU3ODRsLTExOC40ODYxNiwtNS43NjY1NGMtMS44ODA3MywtMC4wOTE1MyAtMi44NjY4NywwLjgwMzA3IC0zLjg1MywxLjY5NzY3bC0zLjk0NDUzLDMuNTc4NGMtMC45ODYxMywwLjg5NDYgLTEuOTcyMjcsMS43ODkyIC0zLjg1MywxLjY5NzY3bC0xMS4yODQ0LC0wLjU0OTE5Yy0xLjg4MDczLC0wLjA5MTUzIC0yLjc3NTMzLC0xLjA3NzY2IC0zLjY2OTkzLC0yLjA2MzhsLTMuNTc4NCwtMy45NDQ1M2MtMC44OTQ2LC0wLjk4NjEzIC0xLjc4OTIsLTEuOTcyMjcgLTMuNjY5OTMsLTIuMDYzOGwtNy41MjI5MywtMC4zNjYxM2MtMi4wNzc0LC0wLjEwMTEgLTMuNjc5NSwtMS44NjcxMyAtMy41Nzg0LC0zLjk0NDUzeiIgZmlsbD0iIzI5MjkyOSIgc3Ryb2tlPSIjY2Y4YjE3IiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMTU1LjQ3MTE4LDE0Mi4wNzcxM2MtMC40MzM5MSwtMi4wMzQwOSAwLjg2MzI5LC00LjAzNDgxIDIuODk3MzgsLTQuNDY4NzJsNy4zNjYxLC0xLjU3MTMzYzEuODQxNTMsLTAuMzkyODMgMi45NTg3LDAuMzMxNTEgNC4wNzU4OCwxLjA1NTg2bDQuNDY4NzIsMi44OTczOGMxLjExNzE4LDAuNzI0MzUgMi4yMzQzNiwxLjQ0ODY5IDQuMDc1ODgsMS4wNTU4NmwxMS4wNDkxNSwtMi4zNTdjMS44NDE1MywtMC4zOTI4MyAyLjU2NTg3LC0xLjUxMDAxIDMuMjkwMjIsLTIuNjI3MTlsMi44OTczOCwtNC40Njg3MmMwLjcyNDM1LC0xLjExNzE4IDEuNDQ4NjksLTIuMjM0MzYgMy4yOTAyMiwtMi42MjcxOWw2Ni4yOTQ5MSwtMTQuMTQxOTljMi4wMzQwOSwtMC40MzM5MSA0LjAzNDgxLDAuODYzMjkgNC40Njg3MiwyLjg5NzM4bDcuODU2NjYsMzYuODMwNTFjMC40MzM5MSwyLjAzNDA5IC0wLjg2MzI5LDQuMDM0ODEgLTIuODk3MzgsNC40Njg3MmwtNjYuMjk0OTEsMTQuMTQxOTljLTEuODQxNTMsMC4zOTI4MyAtMi41NjU4NywxLjUxMDAxIC0zLjI5MDIyLDIuNjI3MTlsLTIuODk3MzgsNC40Njg3MmMtMC43MjQzNSwxLjExNzE4IC0xLjQ0ODY5LDIuMjM0MzYgLTMuMjkwMjIsMi42MjcxOWwtMTEuMDQ5MTUsMi4zNTdjLTEuODQxNTMsMC4zOTI4MyAtMi45NTg3LC0wLjMzMTUxIC00LjA3NTg4LC0xLjA1NTg2bC00LjQ2ODcyLC0yLjg5NzM4Yy0xLjExNzE4LC0wLjcyNDM1IC0yLjIzNDM2LC0xLjQ0ODY5IC00LjA3NTg4LC0xLjA1NTg2bC03LjM2NjEsMS41NzEzM2MtMi4wMzQwOSwwLjQzMzkxIC00LjAzNDgxLC0wLjg2MzI5IC00LjQ2ODcyLC0yLjg5NzM4eiIgZmlsbD0iIzI5MjkyOSIgc3Ryb2tlPSIjYmQ0MmJkIiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMTU5LjY2MDc4LDE5My44NTMxNGMwLjIzNDY2LC0yLjA2NjU4IDIuMTAwMTgsLTMuNTUxNjQgNC4xNjY3NiwtMy4zMTY5OWw3LjQ4Mzc0LDAuODQ5NzdjMS44NzA5NCwwLjIxMjQ0IDIuNzAwMTgsMS4yNTQxMyAzLjUyOTQzLDIuMjk1ODJsMy4zMTY5OSw0LjE2Njc2YzAuODI5MjUsMS4wNDE2OSAxLjY1ODQ5LDIuMDgzMzggMy41Mjk0MywyLjI5NTgybDExLjIyNTYyLDEuMjc0NjZjMS44NzA5NCwwLjIxMjQ0IDIuOTEyNjMsLTAuNjE2OCAzLjk1NDMxLC0xLjQ0NjA1bDQuMTY2NzYsLTMuMzE2OTljMS4wNDE2OSwtMC44MjkyNSAyLjA4MzM4LC0xLjY1ODQ5IDMuOTU0MzEsLTEuNDQ2MDVsMTEwLjM4NTIzLDEyLjUzNDEyYzIuMDY2NTgsMC4yMzQ2NiAzLjU1MTY0LDIuMTAwMTggMy4zMTY5OSw0LjE2Njc2bC00LjI0ODg1LDM3LjQxODcyYy0wLjIzNDY2LDIuMDY2NTggLTIuMTAwMTgsMy41NTE2NCAtNC4xNjY3NiwzLjMxNjk5bC0xMTAuMzg1MjMsLTEyLjUzNDEyYy0xLjg3MDk0LC0wLjIxMjQ0IC0yLjkxMjYzLDAuNjE2OCAtMy45NTQzMSwxLjQ0NjA1bC00LjE2Njc2LDMuMzE2OTljLTEuMDQxNjksMC44MjkyNSAtMi4wODMzOCwxLjY1ODQ5IC0zLjk1NDMxLDEuNDQ2MDVsLTExLjIyNTYyLC0xLjI3NDY2Yy0xLjg3MDk0LC0wLjIxMjQ0IC0yLjcwMDE4LC0xLjI1NDEzIC0zLjUyOTQzLC0yLjI5NTgybC0zLjMxNjk5LC00LjE2Njc2Yy0wLjgyOTI1LC0xLjA0MTY5IC0xLjY1ODQ5LC0yLjA4MzM4IC0zLjUyOTQzLC0yLjI5NTgybC03LjQ4Mzc0LC0wLjg0OTc3Yy0yLjA2NjU4LC0wLjIzNDY2IC0zLjU1MTY0LC0yLjEwMDE4IC0zLjMxNjk5LC00LjE2Njc2eiIgZmlsbD0iIzI5MjkyOSIgc3Ryb2tlPSJ1cmwoI2NvbG9yLTEpIiBzdHJva2Utd2lkdGg9IjAiLz48cGF0aCBkPSJNMTU1LjM5ODI3LDI3My4wNDg3MWMtMC4xNTU1OSwtMi4wNzQwMyAxLjM5OTYxLC0zLjg4MTUgMy40NzM2NCwtNC4wMzcwOWw3LjUxMDczLC0wLjU2MzQ1YzEuODc3NjgsLTAuMTQwODYgMi44ODY5NSwwLjcyNzU1IDMuODk2MjMsMS41OTU5Nmw0LjAzNzA5LDMuNDczNjRjMS4wMDkyNywwLjg2ODQxIDIuMDE4NTQsMS43MzY4MiAzLjg5NjIzLDEuNTk1OTZsMTEuMjY2MDksLTAuODQ1MTdjMS44Nzc2OCwtMC4xNDA4NiAyLjc0NjA5LC0xLjE1MDEzIDMuNjE0NSwtMi4xNTk0MWwzLjQ3MzY0LC00LjAzNzA5YzAuODY4NDEsLTEuMDA5MjcgMS43MzY4MiwtMi4wMTg1NCAzLjYxNDUsLTIuMTU5NDFsNzMuMjI5NjIsLTUuNDkzNmMyLjA3NDAzLC0wLjE1NTU5IDMuODgxNSwxLjM5OTYxIDQuMDM3MDksMy40NzM2NGwyLjgxNzIzLDM3LjU1MzY1YzAuMTU1NTksMi4wNzQwMyAtMS4zOTk2MSwzLjg4MTUgLTMuNDczNjQsNC4wMzcwOWwtMTE0LjUzODYzLDguNTkyNTZjLTIuMDc0MDMsMC4xNTU1OSAtMy44ODE1LC0xLjM5OTYxIC00LjAzNzA5LC0zLjQ3MzY0eiIgZmlsbD0iIzI5MjkyOSIgc3Ryb2tlPSIjY2Y4YjE3IiBzdHJva2Utd2lkdGg9IjAiLz48L2c+PC9nPjwvc3ZnPjwhLS1yb3RhdGlvbkNlbnRlcjoyNTcuNTA3NTE6MTkyLjE5MjE4OTk5OTk5OTk4LS0+"></div>
+    <h1 class="loading-text">Constructing blocks...</h1>
+    
     <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
   </div>
 
@@ -273,7 +273,7 @@ return new A(B,"base64").toString("binary")}:"object"==typeof t.base64js?functio
       const scaffolding = new Scaffolding.Scaffolding();
       scaffolding.width = 480;
       scaffolding.height = 360;
-      scaffolding.resizeMode = "dynamic-resize";
+      scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
       scaffolding.usePackagedRuntime = true;
       scaffolding.setup();
@@ -291,18 +291,18 @@ return new A(B,"base64").toString("binary")}:"object"==typeof t.base64js?functio
       };
 
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
-      scaffolding.setAccentColor("#a40000");
+      scaffolding.setAccentColor("#ff4c4c");
 
-      scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "Test.sb3"));
+      scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Torec.sb3"));
 
       vm.setTurboMode(false);
       if (vm.setInterpolation) vm.setInterpolation(false);
       if (vm.setFramerate) vm.setFramerate(30);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(false);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
-        fencing: false,
+        fencing: true,
         miscLimits: true,
-        maxClones: 9999999999,
+        maxClones: 300,
       });
       if (vm.setCompilerOptions) vm.setCompilerOptions({
         enabled: true,
@@ -379,7 +379,7 @@ return new A(B,"base64").toString("binary")}:"object"==typeof t.base64js?functio
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (true) {
+      if (false) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
